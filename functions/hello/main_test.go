@@ -13,7 +13,7 @@ func TestHandler(t *testing.T) {
 	if err != nil {
 		t.Errorf("got an error: %s", err)
 	}
-	want := events.APIGatewayV2HTTPResponse{StatusCode: 200, Body: "CDK!"}
+	want := events.APIGatewayV2HTTPResponse{StatusCode: 200, Body: "CDK!!!"}
 	if !reflect.DeepEqual(got, want) {
 		t.Errorf("got %v want %v", got, want)
 	}
